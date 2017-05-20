@@ -1,0 +1,31 @@
+---
+layout: default
+permalink: /authors
+---
+
+<div class="category-desc">
+  <img src="/images/authors.gif"/>
+	<p>Alphabetical listing of Lavender Ink and Diálogos authors.</p>		<div class="clr"></div>
+</div>
+
+{% for author in site.authors %}
+  <div class="items-leading">
+  	<div class="leading">
+  		<div class="img-intro-left">
+      	<img src="/content/images/icons/adamotn.jpg" alt=""/>
+  	  </div>
+      <h1><a href="/authors/{{ author.slug }}">{{ author.name }}</a></h1>
+
+      books here
+      <p><a href="/content/link/277">Ever</a></p>
+
+  		<p class="readmore">
+  				<a href="/authors/{{ author.slug }}">
+  					Read more...</a>
+  		</p>
+    </div>
+  </div>
+
+  <div class="item-separator"></div>
+
+{% endfor %}
